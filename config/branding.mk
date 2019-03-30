@@ -13,13 +13,13 @@ CUSTOM_PLATFORM_VERSION := 9.0
 
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := PixelExperience_caf_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
-CUSTOM_VERSION_PROP := Pie-CAF
-ROM_FINGERPRINT := PixelExperience_caf/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
+CUSTOM_VERSION := aosep_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
+CUSTOM_VERSION_PROP := Pie
+ROM_FINGERPRINT := AOSEP-v2.1-OFFICIAL-ASUS_X00T-20190330
 
 CUSTOM_PROPERTIES := \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.pixelexperience.fingerprint=$(ROM_FINGERPRINT)
+    org.aosep.version=$(CUSTOM_VERSION_PROP) \
+    org.aosep.build_date=$(CUSTOM_BUILD_DATE) \
+    org.aosep.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.aosep.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.aosep.fingerprint=$(ROM_FINGERPRINT)
